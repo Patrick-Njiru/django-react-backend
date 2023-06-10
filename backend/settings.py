@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # Railway PostgreSQL Database (Live) using dj-database-url
-DATABASES = { 'default': dj_database_url.parse(os.getenv('DB_URL')) }
+DATABASES = { 'default': dj_database_url.parse(os.getenv('DATABASE_URL')) }
 
 """ 
 # Alternative way of adding database details 
